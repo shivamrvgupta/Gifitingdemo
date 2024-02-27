@@ -1,0 +1,930 @@
+.vector-icon {
+  height: 4.4px;
+  width: 2.7px;
+  position: absolute;
+  margin: 0 !important;
+  right: 285.3px;
+  bottom: 440.4px;
+  z-index: 2;
+}
+.for-who-is,
+.main-frame-child {
+  position: relative;
+  max-width: 100%;
+}
+.main-frame-child {
+  width: 720px;
+  height: 960px;
+  background-color: var(--color-white);
+  display: none;
+}
+.for-who-is {
+  font-weight: 500;
+  display: inline-block;
+  z-index: 1;
+}
+.girlfriend-frame-child {
+  height: 57px;
+  width: 59px;
+}
+.girlfriend,
+.girlfriend-frame-child {
+  position: relative;
+  z-index: 1;
+}
+.girlfriend-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frame-for-occasion-child {
+  height: 57px;
+  width: 59px;
+}
+.frame-for-occasion-child,
+.wife {
+  position: relative;
+  z-index: 1;
+}
+.frame-for-occasion,
+.parents-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.parents-group {
+  align-items: flex-start;
+  gap: var(--gap-35xl);
+  max-width: 100%;
+}
+.frame-child {
+  height: 57px;
+  width: 59px;
+}
+.frame-child,
+.parents {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frame-item {
+  height: 57px;
+  width: 59px;
+}
+.frame-item,
+.friends {
+  position: relative;
+  z-index: 1;
+}
+.frame-group,
+.parents-group1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.parents-group1 {
+  width: 388px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.frame-inner {
+  height: 57px;
+  width: 59px;
+}
+.boyfriend,
+.frame-inner {
+  position: relative;
+  z-index: 1;
+}
+.frame-div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  min-width: 116px;
+}
+.group-icon {
+  height: 57px;
+  width: 59px;
+}
+.group-icon,
+.husband {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent1,
+.parents-group2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.frame-parent1 {
+  flex: 1;
+  align-items: center;
+  gap: var(--gap-xs);
+  min-width: 110px;
+}
+.parents-group2 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-36xl);
+}
+.frame-with-brother-child {
+  height: 57px;
+  width: 59px;
+}
+.brother,
+.frame-with-brother-child {
+  position: relative;
+  z-index: 1;
+}
+.frame-with-brother {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.vector-icon1 {
+  position: absolute;
+  top: 29px;
+  left: 42.2px;
+  width: 5.1px;
+  height: 2.2px;
+  z-index: 1;
+}
+.vector-pair-icon {
+  position: absolute;
+  top: 27px;
+  left: 42.7px;
+  width: 3.9px;
+  height: 6.2px;
+  z-index: 3;
+}
+.frame-with-sister-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.frame-with-sister {
+  height: 57px;
+  flex: 1;
+  position: relative;
+}
+.sister {
+  position: relative;
+  z-index: 1;
+}
+.brother-text,
+.sister-text {
+  width: 134px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.brother-text {
+  width: 368px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.frame-child1 {
+  height: 57px;
+  width: 59px;
+}
+.frame-child1,
+.mom {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.frame-child2 {
+  height: 57px;
+  width: 59px;
+}
+.dad,
+.frame-child2 {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent3,
+.parents-group3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.parents-group3 {
+  width: 350px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.frame-child3 {
+  height: 57px;
+  width: 59px;
+}
+.crush,
+.frame-child3 {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.frame-child4 {
+  height: 57px;
+  width: 59px;
+}
+.frame-child4,
+.pet {
+  position: relative;
+  z-index: 1;
+}
+.frame-parent5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.frame-for-whom,
+.parents-group4 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.parents-group4 {
+  width: 341px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-for-whom {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.customisation-frame {
+  width: 408px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+}
+.customisation-frame,
+.frame-container,
+.main-frame {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.main-frame {
+  flex: 1;
+  background-color: var(--color-white);
+  flex-direction: column;
+  align-items: center;
+  padding: 146px var(--padding-xl) 241px;
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+}
+.frame-container {
+  width: 50%;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  min-width: 50%;
+}
+.mothers-day,
+.what-is-the {
+  position: relative;
+  display: inline-block;
+}
+.what-is-the {
+  height: 31px;
+  font-weight: 500;
+}
+.mothers-day {
+  width: 164px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.occasion-list,
+.occasion-list-child {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-7xs) var(--padding-7xs);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.fathers-day {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-item,
+.occasion-list1 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-item {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list1 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-2xl) var(--padding-7xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.valentines {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-inner,
+.occasion-list2 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-inner {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list2 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-3xl) var(--padding-7xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.birthday {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list3,
+.rectangle-div {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.rectangle-div {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list3 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-3xl) var(--padding-7xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.anniversary {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child1,
+.occasion-list4 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child1 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list4 {
+  cursor: pointer;
+  padding: var(--padding-6xs) 80px var(--padding-7xs) 78px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.friendship-day {
+  width: 190px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.occasion-list-child2,
+.occasion-list5 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child2 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list5 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-7xs) var(--padding-7xs);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.wedding {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child3,
+.occasion-list6 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child3 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list6 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-4xl) var(--padding-7xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.baby-shower {
+  width: 167px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.occasion-list-child4,
+.occasion-list7 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child4 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list7 {
+  cursor: pointer;
+  padding: var(--padding-6xs) var(--padding-8xs) var(--padding-7xs);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.graduation {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child5,
+.occasion-list8 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child5 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list8 {
+  cursor: pointer;
+  padding: var(--padding-7xs) var(--padding-3xl) var(--padding-6xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.housewarming {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child6,
+.occasion-list9 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child6 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list9 {
+  cursor: pointer;
+  padding: var(--padding-6xs) 66px var(--padding-7xs) 64px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.diwali {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child7,
+.occasion-list10 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child7 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list10 {
+  cursor: pointer;
+  padding: var(--padding-7xs) var(--padding-4xl) var(--padding-6xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.eid {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-hepta-slab);
+  color: var(--color-black);
+  text-align: justify;
+}
+.occasion-list-child8,
+.occasion-list11 {
+  border: 1px solid var(--profile);
+  border-radius: var(--br-8xs);
+}
+.occasion-list-child8 {
+  height: 36px;
+  width: 280px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.occasion-list11 {
+  cursor: pointer;
+  padding: var(--padding-7xs) var(--padding-3xl) var(--padding-6xs)
+    var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.frame-occasions {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.frame-occasions,
+.parents-siblings,
+.what-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.what-text {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-31xl);
+}
+.parents-siblings {
+  flex: 1;
+  align-items: flex-start;
+  min-width: 195px;
+  min-height: 741px;
+}
+.next1 {
+  position: relative;
+  font-weight: 500;
+}
+.eparrow-up-icon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.next,
+.occasion-frame {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.next {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--color-blueviolet);
+}
+.occasion-frame {
+  align-self: stretch;
+  gap: var(--gap-49xl);
+}
+.next-arrow,
+.occasion-frame,
+.occasion-profile {
+  display: flex;
+  justify-content: flex-start;
+}
+.next-arrow {
+  width: 453px;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 453px;
+  min-height: 814px;
+  max-width: 100%;
+}
+.occasion-profile {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-ghostwhite);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 11%;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-hepta-slab);
+}
+@media screen and (max-width: 995px) {
+  .frame-container,
+  .next-arrow {
+    flex: 1;
+  }
+  .occasion-profile {
+    flex-wrap: wrap;
+    gap: var(--gap-191xl);
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-frame {
+    gap: var(--gap-31xl);
+    padding-top: 95px;
+    padding-bottom: 157px;
+    box-sizing: border-box;
+  }
+  .frame-container,
+  .next-arrow {
+    min-width: 100%;
+  }
+  .occasion-profile {
+    gap: var(--gap-191xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .for-who-is {
+    font-size: var(--font-size-xl);
+  }
+  .girlfriend,
+  .wife {
+    font-size: var(--font-size-base);
+  }
+  .parents-group {
+    flex-wrap: wrap;
+    gap: var(--gap-35xl);
+  }
+  .friends,
+  .parents {
+    font-size: var(--font-size-base);
+  }
+  .parents-group1 {
+    flex-wrap: wrap;
+  }
+  .boyfriend,
+  .husband {
+    font-size: var(--font-size-base);
+  }
+  .parents-group2 {
+    flex-wrap: wrap;
+    gap: var(--gap-36xl);
+  }
+  .brother,
+  .sister {
+    font-size: var(--font-size-base);
+  }
+  .brother-text {
+    flex-wrap: wrap;
+  }
+  .dad,
+  .mom {
+    font-size: var(--font-size-base);
+  }
+  .parents-group3 {
+    flex-wrap: wrap;
+  }
+  .crush,
+  .pet {
+    font-size: var(--font-size-base);
+  }
+  .parents-group4 {
+    flex-wrap: wrap;
+  }
+  .main-frame {
+    padding-top: 62px;
+    padding-bottom: 102px;
+    box-sizing: border-box;
+  }
+  .what-is-the {
+    font-size: var(--font-size-xl);
+  }
+  .occasion-list4,
+  .occasion-list9 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .what-text {
+    gap: var(--gap-31xl);
+  }
+  .parents-siblings {
+    min-height: auto;
+  }
+  .next1 {
+    font-size: var(--font-size-base);
+  }
+  .occasion-frame {
+    flex-wrap: wrap;
+    gap: var(--gap-49xl);
+  }
+  .occasion-profile {
+    gap: var(--gap-191xl);
+  }
+}
+
+
+
+.occasion.active{
+  background-color: #e0e0e0; /* Change background color on hover */
+  cursor: pointer;
+}
+/* Add hover effect on buttons */
+.occasion:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+  cursor: pointer;
+}
+
+/* Add styles for selected option */
+
+
+  /* Add CSS styles for selected items */
+  .selection.active {
+    border: 2px solid #b0b4fb;
+  }
+
+  /* Add CSS styles for hover effect */
+  .selection:hover {
+    border: 2px solid #b0b4fb;
+  }

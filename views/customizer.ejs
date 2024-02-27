@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/public/css/global.css" />
+    <link rel="stylesheet" href="/public/css/OccasionProfile.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hepta Slab:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="occasion-profile1">
+      <div class="rectangle-parent">
+        <div class="frame-child5"></div>
+        <div class="product-container-parent">
+          <div class="product-container">
+            <div class="frame-with-text">
+              <h1 class="products">Products</h1>
+            </div>
+          </div>
+          
+          <div class="row">
+            <% if (chocolates != '') { %>        
+              <% chocolates.forEach((row, index) => { %> 
+            <div class="col-sm-4 py-3">
+              <% if (row.is_selected == true) { %>        
+                <div class="teenyiconstick-circle-solid-group select"  onclick="handleClick('<%= row.id %>' , 'true')">
+                  <img
+                    class="teenyiconstick-circle-solid"
+                    loading="eager"
+                    alt=""
+                    src="/public/img/teenyiconstickcirclesolid.svg"
+                  />
+                
+                  <div class="image-9-parent selectable">
+                    <img
+                      class="image-9-icon data-img"
+                      loading="eager"
+                      alt=""
+                      src="<%= row.image %>"
+                    />
+                
+                    <div class="frame-child12"></div>
+                    <div class="product-name-frame">
+                      <div class="chocolate8 data-text">Chocolate</div>
+                    </div>
+                  </div>
+                </div>
+              <% } else { %>
+                <div class="teenyiconstick-circle-solid-group select" onclick="handleClick('<%= row.id %>' , 'true')">
+                  <img
+                    class="hide teenyiconstick-circle-solid"
+                    loading="eager"
+                    alt=""
+                    src="/public/img/teenyiconstickcirclesolid.svg"
+                  />
+                
+                  <div class="image-9-parent selectable">
+                    <img
+                      class="image-9-icon data-img"
+                      loading="eager"
+                      alt=""
+                      src="<%= row.image %>"
+                    />
+                
+                    <div class="frame-child12"></div>
+                    <div class="product-name-frame">
+                      <div class="chocolate8 data-text">Chocolate</div>
+                    </div>
+                  </div>
+                </div>
+              <% } %>      
+            </div>
+            <% }) %>      
+            <% } else { %>
+              No Products
+            <% } %>      
+          </div>
+          
+        </div>
+      </div>
+      <div class="new-frame">
+        <div class="nested-frames">
+          <div class="rectangle-frame">
+            <div class="frame-with-text-and-image">
+              <div class="gift-box-text">
+                <h1 class="gift-box">Gift Box</h1>
+              </div>
+              <div class="gift-box-label">
+                  <% if (chocolates != '') { %>        
+                    <% chocolates.forEach((row, index) => { %> 
+                        <% if (row.is_selected == true) { %>        
+                          <div class="frame-image-1">
+                            <div class="frame-charm-cross">
+                              <img
+                                class="image-10-icon place-img-1" 
+                                alt="img"
+                                src="<%= row.image %>"
+                              />
+          
+                              <img
+                                class="charmcircle-cross-icon cross-1"
+                                loading="eager"
+                                alt=""
+                                src="/public/img/charmcirclecross.svg"
+                                onclick="handleClick('<%= row.id %>','false')"
+                              />
+                            </div>
+                            <div class="frame-image-child"></div>
+                            <div class="line-vector">
+                              <div class="chocolate9 place-text-1">Chocolate</div>
+                            </div>
+                          </div>
+                        <% } else { %>
+
+                        <% } %>      
+                  <% }) %>      
+                  <% } else { %>
+                    No Products
+                  <% } %>    
+                
+              </div>
+            </div>
+          </div>
+          <div class="gift-box1">
+            <div class="rectangle-text">
+              <img
+                class="customize-frame-icon"
+                loading="eager"
+                alt=""
+                src="<%= boxes.image %>"
+              />
+
+              <div class="chocolate-sweet-box">Chocolate Sweet Box</div>
+            </div>
+          </div>
+          <% if (selectedProductsCount === 3) { %>        
+              <div class="full">
+                  <div class="add-new-product-btn">
+                      <div class="your-gift-box-container">
+                          <p class="your-gift-box">Your gift box is full!</p>
+                          <p class="to-add-a">
+                              To add a new product, please remove an existing item from your box.
+                          </p>
+                      </div>
+                  </div>
+                      <button class="customize">
+                          <div class="proceed-to-checkout" onclick="handleReset('')">Reset</div>
+                      </button>
+              </div>
+          <% } else { %>
+              <button class="customize proceed">
+                  <div class="customize-child"></div>
+                  <div class="proceed-to-checkout">Proceed to Checkout</div>
+              </button>
+          <% } %>
+        
+        
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function handleClick(rowId , is_selected) {
+        // Create a JSON object with the rowId
+        var requestBody = { rowId: rowId , is_selected: is_selected };
+    
+        // Make an API call with the request body
+        fetch('/update/product', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(requestBody)
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            // Handle API response data here
+            console.log(data);
+            if (data && data.success) {
+                // Reload the page only if the update was successful
+                window.location.reload();
+            } else {
+                console.error('Update failed');
+                // Handle the failure scenario as needed
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      }
+    </script>
+    
+    <script>
+      function handleReset() {
+        // Make an API call without any request body
+        fetch('/reset/products', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            // Handle API response data here
+            console.log(data);
+            if (data && data.success) {
+                // Reload the page only if the update was successful
+                window.location.reload();
+            } else {
+                console.error('Update failed');
+                // Handle the failure scenario as needed
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      }
+    </script>
+    
+  </body>
+</html>

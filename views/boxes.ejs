@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/public/css/global.css" />
+    <link rel="stylesheet" href="/public/css/GiftBoxes.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hepta Slab:wght@400;500&display=swap"
+    />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+    />
+    <style>
+      .rectangle-shape-icon:hover,
+      .active {
+        border: 2px solid #b0b4fb;
+      }
+      #nextContainer {
+        display: none; /* Initially hide the next button */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gift-boxes">
+      <div class="frame-container1">
+        <h1 class="inner-frame1">Gift Options for your Loved Ones</h1>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <% if (boxes != '') { %>        
+            <% boxes.forEach((row, index) => { %> 
+              <div class="col-lg-4 py-5">
+                <img
+                  class="rectangle-shape-icon"
+                  loading="eager"
+                  alt=""
+                  src="<%= row.image %>"
+                  onclick="toggleActive(this, '<%= row.id %>')" 
+                />
+                <div class="chocolate-sweet-box6 text-box"><%= row.name %></div>
+              </div>
+            <% }) %>      
+          <% } else { %>
+            Noboxes
+          <% } %>      
+        </div>
+      </div>
+      <div class="next2" id="nextContainer" style="margin-left: 50%;">
+        <a href="" id="nextLink"> <!-- Add an ID to the anchor tag -->
+          <div class="next3" style="font-size: 20px;">Next</div>
+          <img
+            class="eparrow-up-icon1"
+            loading="eager"
+            alt=""
+            src="./public/eparrowup@2x.png"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var selectedBoxId = null; // Variable to store the ID of the selected box
+
+      function toggleActive(element, id) {
+        var boxes = document.querySelectorAll('.rectangle-shape-icon');
+        boxes.forEach(function(box) {
+          if (box !== element) {
+            box.classList.remove('active'); // Deselect other boxes
+          }
+        });
+        element.classList.toggle('active'); // Toggle the active class for the clicked box
+        selectedBoxId = id; // Store the ID of the selected box
+        checkSelection();
+      }
+
+      function checkSelection() {
+        var nextButton = document.getElementById('nextContainer');
+        var nextLink = document.getElementById('nextLink'); // Get the next button's anchor tag
+        var selected = selectedBoxId !== null;
+
+        if (selected) {
+          nextButton.style.display = 'block'; // Show the next button
+          nextLink.href = '/customizer/' + selectedBoxId; // Set the href attribute
+        } else {
+          nextButton.style.display = 'none'; // Hide the next button
+        }
+      }
+    </script>
+  </body>
+</html>
